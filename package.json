@@ -1,0 +1,20 @@
+{
+  "name": "daisy-performance-report",
+  "version": "1.0.0",
+  "description": "Daisy MD Care - Campaign Performance Report",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 3000",
+    "test": "echo \"No tests configured\""
+  },
+  "keywords": [
+    "daisy",
+    "medical",
+    "dermatology",
+    "performance",
+    "report",
+    "marketing"
+  ],
+  "author": "Poppy Marketing & Consulting",
+  "license": "MIT"
+}
