@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Daisy MD Care - Performance Report</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #0a3d4d 0%, #0d5a6e 100%);
+            background-attachment: fixed;
+            color: #2c3e50;
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 14px 10px;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        /* ========== TYPOGRAPHY ========== */
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            color: #0a3d4d;
+            line-height: 1.25;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 28px;
+            padding-bottom: 14px;
+            border-bottom: 3px solid #5bb3c4;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+        }
+
+        h4 {
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+        }
+
+        p {
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+            color: #2c3e50;
+        }
+
+        /* ========== HEADER SECTION ========== */
+        header {
+            background: white;
+            border-radius: 12px;
+            padding: 32px 18px;
+            margin-bottom: 32px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            font-weight: 800;
+        }
+
+        .header-tagline {
+            color: #5bb3c4;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 18px;
+            letter-spacing: 0.2px;
+        }
+
+        .header-report-title {
+            color: #0a3d4d;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid #e8f4f8;
+        }
+
+        .report-meta {
+            color: #5bb3c4;
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+
+        .report-meta p {
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .report-meta strong {
+            color: #0a3d4d;
+            font-weight: 700;
+        }
+
+        /* ========== EXECUTIVE SUMMARY ========== */
+        .executive-summary {
+            background: white;
+            border-radius: 12px;
+            padding: 28px 18px;
+            margin-bottom: 32px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .executive-summary h2 {
+            margin-bottom: 28px;
+            padding-bottom: 14px;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        .metric-card {
+            background: linear-gradient(135deg, #0a3d4d 0%, #0d5a6e 100%);
+            color: white;
+            padding: 20px 16px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+            border: 1px solid rgba(91, 179, 196, 0.2);
+        }
+
+        .metric-card .label {
+            font-size: 0.75rem;
+            opacity: 0.85;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            font-weight: 600;
+        }
+
+        .metric-card .value {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #5bb3c4;
+            line-height: 1.2;
+        }
+
+        .metric-card.highlight {
+            border: 2px solid #ffc107;
+            position: relative;
+        }
+
+        .metric-card.highlight .value {
+            color: #ffc107;
+            font-size: 2rem;
+        }
+
+        .metric-card.highlight::before {
+            content: '⭐';
+            position: absolute;
+            top: -8px;
+            right: 12px;
+            font-size: 1.4rem;
+        }
+
+        /* ========== CAMPAIGNS SECTION ========== */
+        .campaigns-section {
+            margin-bottom: 32px;
+        }
+
+        .campaigns-section h2 {
+            color: white;
+            margin-bottom: 28px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+            border-bottom: 3px solid #5bb3c4;
+            padding-bottom: 14px;
+        }
+
+        .campaign-card {
+            background: white;
+            border-radius: 12px;
+            padding: 22px 16px;
+            margin-bottom: 20px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #5bb3c4;
+        }
+
+        .campaign-card.top-performer {
+            border-left: 5px solid #ffc107;
+            background: linear-gradient(to right, rgba(255, 193, 7, 0.03), white);
+        }
+
+        .campaign-header {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 18px;
+            gap: 10px;
+            padding-bottom: 14px;
+            border-bottom: 2px solid #f0f4f7;
+        }
+
+        .campaign-icon {
+            font-size: 1.8rem;
+            min-width: 40px;
+        }
+
+        .campaign-header-content {
+            flex: 1;
+        }
+
+        .campaign-header h3 {
+            font-size: 1.2rem;
+            margin-bottom: 6px;
+            font-weight: 800;
+        }
+
+        .campaign-status {
+            display: inline-block;
+            background: #e8f4f8;
+            color: #0a3d4d;
+            padding: 4px 10px;
+            border-radius: 16px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            margin-top: 3px;
+        }
+
+        .campaign-status.archived {
+            background: #f5f7fa;
+            color: #7f8c8d;
+        }
+
+        .metrics-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 16px;
+            font-size: 0.85rem;
+        }
+
+        .metrics-table th {
+            background: #f5f7fa;
+            color: #0a3d4d;
+            padding: 10px 8px;
+            text-align: left;
+            font-weight: 700;
+            border-bottom: 2px solid #5bb3c4;
+            font-size: 0.8rem;
+        }
+
+        .metrics-table td {
+            padding: 10px 8px;
+            border-bottom: 1px solid #e8f4f8;
+        }
+
+        .metrics-table tr:hover {
+            background: #f9fbfc;
+        }
+
+        .metric-value {
+            font-weight: 700;
+            color: #0a3d4d;
+        }
+
+        .metric-highlight {
+            color: #d32f2f;
+            font-weight: 800;
+        }
+
+        .campaign-notes {
+            background: #f9fbfc;
+            border-left: 4px solid #5bb3c4;
+            padding: 14px 12px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        .campaign-notes strong {
+            color: #0a3d4d;
+            font-weight: 700;
+        }
+
+        /* ========== COMPARISON SECTION ========== */
+        .comparison-section {
+            background: white;
+            border-radius: 12px;
+            padding: 28px 18px;
+            margin-bottom: 32px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .comparison-section h2 {
+            margin-bottom: 28px;
+            padding-bottom: 14px;
+        }
+
+        .ranking-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        .ranking-category {
+            background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+            padding: 18px;
+            border-radius: 10px;
+            border: 1px solid #e0e8f1;
+        }
+
+        .ranking-category h4 {
+            color: #0a3d4d;
+            margin-bottom: 14px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #5bb3c4;
+        }
+
+        .ranking-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #e8f4f8;
+            gap: 8px;
+        }
+
+        .ranking-item:last-child {
+            border-bottom: none;
+        }
+
+        .ranking-medal {
+            font-size: 1.2rem;
+            min-width: 28px;
+        }
+
+        .ranking-name {
+            flex: 1;
+            color: #2c3e50;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .ranking-value {
+            color: #0a3d4d;
+            font-weight: 800;
+            font-size: 0.9rem;
+        }
+
+        /* ========== TAKEAWAYS SECTION ========== */
+        .takeaways-section {
+            background: white;
+            border-radius: 12px;
+            padding: 28px 18px;
+            margin-bottom: 32px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .takeaways-section h2 {
+            margin-bottom: 28px;
+            padding-bottom: 14px;
+        }
+
+        .takeaway-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 14px;
+        }
+
+        .takeaway-item {
+            background: #f9fbfc;
+            padding: 16px;
+            border-radius: 10px;
+            border-left: 4px solid #5bb3c4;
+        }
+
+        .takeaway-item.positive {
+            border-left: 4px solid #4caf50;
+            background: rgba(76, 175, 80, 0.03);
+        }
+
+        .takeaway-item.info {
+            border-left: 4px solid #2196f3;
+            background: rgba(33, 150, 243, 0.03);
+        }
+
+        .takeaway-item h4 {
+            color: #0a3d4d;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        .takeaway-item p {
+            color: #2c3e50;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        /* ========== NEXT STEPS SECTION ========== */
+        .next-steps {
+            background: white;
+            border-radius: 12px;
+            padding: 28px 18px;
+            margin-bottom: 32px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .next-steps h2 {
+            margin-bottom: 28px;
+            padding-bottom: 14px;
+        }
+
+        .next-steps-intro {
+            text-align: center;
+            margin-bottom: 24px;
+            font-size: 0.95rem;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        .new-campaigns {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 14px;
+        }
+
+        .campaign-intro {
+            background: linear-gradient(135deg, #0a3d4d 0%, #0d5a6e 100%);
+            color: white;
+            padding: 22px 16px;
+            border-radius: 10px;
+            border: 1px solid rgba(91, 179, 196, 0.3);
+        }
+
+        .campaign-intro h3 {
+            color: #5bb3c4;
+            font-size: 1.1rem;
+            margin-bottom: 14px;
+            font-weight: 800;
+        }
+
+        .campaign-intro ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .campaign-intro li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .campaign-intro li:last-child {
+            border-bottom: none;
+        }
+
+        .campaign-intro li:before {
+            content: "✓ ";
+            color: #5bb3c4;
+            margin-right: 8px;
+            font-weight: 800;
+        }
+
+        /* ========== FOOTER ========== */
+        footer {
+            background: white;
+            border-radius: 12px;
+            padding: 22px 16px;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            color: #7f8c8d;
+            font-size: 0.85rem;
+            margin-bottom: 20px;
+        }
+
+        footer p {
+            margin: 6px 0;
+            line-height: 1.5;
+        }
+
+        footer p:first-child {
+            margin-top: 0;
+        }
+
+        .footer-highlight {
+            color: #0a3d4d;
+            font-weight: 700;
+        }
+
+        .footer-divider {
+            margin: 14px 0;
+            padding-top: 14px;
+            border-top: 2px solid #e8f4f8;
+            font-size: 0.8rem;
+        }
+
+        /* ========== PRINT STYLES ========== */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            header,
+            .executive-summary,
+            .campaign-card,
+            .comparison-section,
+            .takeaways-section,
+            .next-steps,
+            footer {
+                box-shadow: none;
+                border: 1px solid #ddd;
+                page-break-inside: avoid;
+                margin-bottom: 16px;
+            }
+
+            .campaigns-section h2 {
+                color: #0a3d4d;
+                text-shadow: none;
+            }
+
+            h2 {
+                page-break-after: avoid;
+            }
+        }
+
+        /* ========== ACCESSIBILITY ========== */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation: none !important;
+                transition: none !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            header,
+            .executive-summary,
+            .comparison-section,
+            .takeaways-section,
+            .next-steps,
+            footer {
+                background: #1a2a2f;
+                color: #ecf0f1;
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            }
+
+            h1, h2, h3, h4 {
+                color: #5bb3c4;
+            }
+
+            p, .ranking-name, .takeaway-item p {
+                color: #ecf0f1;
+            }
+
+            .metrics-table th {
+                background: #0a3d4d;
+                color: #5bb3c4;
+            }
+
+            .metrics-table td {
+                border-bottom-color: #0a3d4d;
+                color: #ecf0f1;
+            }
+
+            .campaign-notes,
+            .ranking-category,
+            .takeaway-item {
+                background: #0a3d4d;
+                color: #ecf0f1;
+            }
+
+            .metric-value {
+                color: #5bb3c4;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Daisy MD Care</h1>
+            <p class="header-tagline">Clearer Skin. Renewed Confidence.</p>
+            <p class="header-report-title">Performance Report</p>
+            <div class="report-meta">
+                <p><strong>Period:</strong> Nov 10 - Nov 18, 2025</p>
+                <p><strong>Account:</strong> 3137565307</p>
+                <p>Archive Campaign Performance Summary</p>
+            </div>
+        </header>
+
+        <!-- Executive Summary -->
+        <div class="executive-summary">
+            <h2>Overview</h2>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="label">Impressions</div>
+                    <div class="value">3,230</div>
+                </div>
+                <div class="metric-card">
+                    <div class="label">Clicks</div>
+                    <div class="value">138</div>
+                </div>
+                <div class="metric-card">
+                    <div class="label">CTR</div>
+                    <div class="value">4.27%</div>
+                </div>
+                <div class="metric-card">
+                    <div class="label">Total Spend</div>
+                    <div class="value">$430.75</div>
+                </div>
+                <div class="metric-card">
+                    <div class="label">Avg CPC</div>
+                    <div class="value">$3.12</div>
+                </div>
+                <div class="metric-card highlight">
+                    <div class="label">Conversions</div>
+                    <div class="value">2</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Campaign Performance -->
+        <div class="campaigns-section">
+            <h2>Campaigns</h2>
+
+            <!-- Van Nuys - Top Performer -->
+            <div class="campaign-card top-performer">
+                <div class="campaign-header">
+                    <div class="campaign-icon">🏢</div>
+                    <div class="campaign-header-content">
+                        <h3>Van Nuys</h3>
+                        <span class="campaign-status archived">Archived Nov 18</span>
+                    </div>
+                </div>
+                <table class="metrics-table">
+                    <tbody>
+                        <tr>
+                            <td><strong>Impressions</strong></td>
+                            <td class="metric-value">2,517</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Clicks</strong></td>
+                            <td class="metric-value">113</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CTR</strong></td>
+                            <td class="metric-value">4.49%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cost</strong></td>
+                            <td class="metric-value">$335.72</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CPC</strong></td>
+                            <td class="metric-value">$2.97</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Conversions</strong></td>
+                            <td class="metric-highlight">2 Calls ⭐</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="campaign-notes">
+                    <strong>Top Performer:</strong> Highest volume and only conversions. Strong product-market fit. This success drove consolidation strategy.
+                </div>
+            </div>
+
+            <!-- Sofia Campaign -->
+            <div class="campaign-card">
+                <div class="campaign-header">
+                    <div class="campaign-icon">📍</div>
+                    <div class="campaign-header-content">
+                        <h3>Sofia</h3>
+                        <span class="campaign-status archived">Archived Nov 18</span>
+                    </div>
+                </div>
+                <table class="metrics-table">
+                    <tbody>
+                        <tr>
+                            <td><strong>Impressions</strong></td>
+                            <td class="metric-value">611</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Clicks</strong></td>
+                            <td class="metric-value">18</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CTR</strong></td>
+                            <td class="metric-value">2.95%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cost</strong></td>
+                            <td class="metric-value">$74.50</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CPC</strong></td>
+                            <td class="metric-value">$4.14</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Conversions</strong></td>
+                            <td class="metric-value">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="campaign-notes">
+                    <strong>Insights:</strong> Good volume but highest CPC. No conversions. Keywords merged into Downey Consolidated.
+                </div>
+            </div>
+
+            <!-- Maria Elena Campaign -->
+            <div class="campaign-card">
+                <div class="campaign-header">
+                    <div class="campaign-icon">👥</div>
+                    <div class="campaign-header-content">
+                        <h3>Maria Elena</h3>
+                        <span class="campaign-status archived">Archived Nov 18</span>
+                    </div>
+                </div>
+                <table class="metrics-table">
+                    <tbody>
+                        <tr>
+                            <td><strong>Impressions</strong></td>
+                            <td class="metric-value">102</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Clicks</strong></td>
+                            <td class="metric-value">7</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CTR</strong></td>
+                            <td class="metric-value">6.86%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cost</strong></td>
+                            <td class="metric-value">$20.53</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CPC</strong></td>
+                            <td class="metric-value">$2.93</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Conversions</strong></td>
+                            <td class="metric-value">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="campaign-notes">
+                    <strong>Best Performer:</strong> Highest CTR (6.86%) and lowest CPC ($2.93). High-quality keywords retained in Downey Consolidated.
+                </div>
+            </div>
+        </div>
+
+        <!-- Comparison Section -->
+        <div class="comparison-section">
+            <h2>Rankings</h2>
+            <div class="ranking-grid">
+                <div class="ranking-category">
+                    <h4>By CTR</h4>
+                    <div class="ranking-item">
+                        <div class="ranking-medal">🥇</div>
+                        <div class="ranking-name">Maria Elena</div>
+                        <div class="ranking-value">6.86%</div>
+                    </div>
+                    <div class="ranking-item">
+                        <div class="ranking-medal">🥈</div>
+                        <div class="ranking-name">Van Nuys</div>
+                        <div class="ranking-value">4.49%</div>
+                    </div>
+                    <div class="ranking-item">
+                        <div class="ranking-medal">🥉</div>
+                        <div class="ranking-name">Sofia</div>
+                        <div class="ranking-value">2.95%</div>
+                    </div>
+                </div>
+
+                <div class="ranking-category">
+                    <h4>By CPC</h4>
+                    <div class="ranking-item">
+                        <div class="ranking-medal">🥇</div>
+                        <div class="ranking-name">Maria Elena</div>
+                        <div class="ranking-value">$2.93</div>
+                    </div>
+                    <div class="ranking-item">
+                        <div class="ranking-medal">🥈</div>
+                        <div class="ranking-name">Van Nuys</div>
+                        <div class="ranking-value">$2.97</div>
+                    </div>
+                    <div class="ranking-item">
+                        <div class="ranking-medal">🥉</div>
+                        <div class="ranking-name">Sofia</div>
+                        <div class="ranking-value">$4.14</div>
+                    </div>
+                </div>
+
+                <div class="ranking-category">
+                    <h4>By Impressions</h4>
+                    <div class="ranking-item">
+                        <div class="ranking-medal">🥇</div>
+                        <div class="ranking-name">Van Nuys</div>
+                        <div class="ranking-value">2,517</div>
+                    </div>
+                    <div class="ranking-item">
+                        <div class="ranking-medal">🥈</div>
+                        <div class="ranking-name">Sofia</div>
+                        <div class="ranking-value">611</div>
+                    </div>
+                    <div class="ranking-item">
+                        <div class="ranking-medal">🥉</div>
+                        <div class="ranking-name">Maria Elena</div>
+                        <div class="ranking-value">102</div>
+                    </div>
+                </div>
+
+                <div class="ranking-category">
+                    <h4>By Conversions</h4>
+                    <div class="ranking-item">
+                        <div class="ranking-medal">🥇</div>
+                        <div class="ranking-name">Van Nuys</div>
+                        <div class="ranking-value">2</div>
+                    </div>
+                    <div class="ranking-item">
+                        <div class="ranking-medal">🥈</div>
+                        <div class="ranking-name">Sofia</div>
+                        <div class="ranking-value">0</div>
+                    </div>
+                    <div class="ranking-item">
+                        <div class="ranking-medal">🥉</div>
+                        <div class="ranking-name">Maria Elena</div>
+                        <div class="ranking-value">0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Takeaways -->
+        <div class="takeaways-section">
+            <h2>Takeaways</h2>
+            <div class="takeaway-grid">
+                <div class="takeaway-item positive">
+                    <h4>✅ What Worked</h4>
+                    <p>Van Nuys: 2 phone conversions indicate strong product-market fit for this geographic area.</p>
+                </div>
+
+                <div class="takeaway-item positive">
+                    <h4>✅ Quality Keywords</h4>
+                    <p>Maria Elena: Highest CTR (6.86%) at lowest cost ($2.93 CPC). Excellent keyword quality.</p>
+                </div>
+
+                <div class="takeaway-item info">
+                    <h4>ℹ️ Efficiency</h4>
+                    <p>Avg CPC of $3.12 is solid for medical services. Competitive bidding and good quality scores.</p>
+                </div>
+
+                <div class="takeaway-item info">
+                    <h4>ℹ️ Consolidation</h4>
+                    <p>Merged into two campaigns (Downey + Van Nuys) for better budget control and management.</p>
+                </div>
+
+                <div class="takeaway-item info">
+                    <h4>ℹ️ Strategy</h4>
+                    <p>New structure maintains high-performing keywords while improving geographic targeting.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Next Steps -->
+        <div class="next-steps">
+            <h2>Next Phase</h2>
+            <p class="next-steps-intro">New consolidated campaigns active as of Nov 19, 2025:</p>
+            <div class="new-campaigns">
+                <div class="campaign-intro">
+                    <h3>✨ Downey Consolidated</h3>
+                    <ul>
+                        <li>Merges Sofia + Maria Elena keywords</li>
+                        <li>Downey, CA focus</li>
+                        <li>Combined budget optimization</li>
+                        <li>Enhanced keyword structure</li>
+                        <li>Ready for daily optimization</li>
+                    </ul>
+                </div>
+
+                <div class="campaign-intro">
+                    <h3>✨ Van Nuys Consolidated</h3>
+                    <ul>
+                        <li>Continuation of top performer</li>
+                        <li>Baseline: 2 conversions, 4.49% CTR</li>
+                        <li>Refined keyword structure</li>
+                        <li>Enhanced geographic targeting</li>
+                        <li>Priority for scaling</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p><span class="footer-highlight">Generated:</span> November 19, 2025</p>
+            <p><span class="footer-highlight">Source:</span> Google Ads API - Account 3137565307</p>
+            <p><span class="footer-highlight">Manager:</span> Poppy Marketing & Consulting</p>
+            <div class="footer-divider">
+                <p>For detailed analysis or custom reporting, contact your account manager.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
