@@ -1,6 +1,6 @@
 # Daisy MD Care - Campaign Performance Report
 
-Customer-friendly performance report for Daisy MD Care consolidated campaigns (November 9-24, 2025).
+Customer-friendly performance report for Daisy MD Care consolidated campaigns (November 19-24, 2025).
 
 ## Overview
 
@@ -37,7 +37,7 @@ Both campaigns are performing exceptionally well with CTR significantly above in
 6. **Moving Forward** - Introduction to the 30-day optimization strategy
 7. **Footer** - Report metadata and contact information
 
-## Campaign Data (November 9-24, 2025)
+## Campaign Data (November 19-24, 2025)
 
 ### Downey Consolidated Campaign
 - **Status**: ENABLED ✅
