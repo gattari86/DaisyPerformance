@@ -20,88 +20,90 @@
             background: linear-gradient(135deg, #0a3d4d 0%, #0d5a6e 100%);
             background-attachment: fixed;
             color: #2c3e50;
-            line-height: 1.7;
+            line-height: 1.6;
             min-height: 100vh;
-            padding: 24px 16px;
+            padding: 40px 20px;
         }
 
         .container {
-            max-width: 1220px;
+            max-width: 1200px;
             margin: 0 auto;
         }
 
         /* ========== TYPOGRAPHY ========== */
-        h1, h2, h3, h4 {
-            font-weight: 700;
-            letter-spacing: -0.5px;
-            color: #0a3d4d;
-        }
-
         h1 {
-            font-size: 2.5rem;
-            line-height: 1.2;
-            margin-bottom: 12px;
+            font-size: 2.8rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 16px;
+            color: #0a3d4d;
+            letter-spacing: -1px;
         }
 
         h2 {
-            font-size: 2rem;
-            line-height: 1.25;
-            margin-bottom: 32px;
-            padding-bottom: 16px;
+            font-size: 1.9rem;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
             border-bottom: 3px solid #5bb3c4;
-            display: inline-block;
+            display: block;
+            color: #0a3d4d;
+            letter-spacing: -0.5px;
         }
 
         h3 {
-            font-size: 1.5rem;
-            margin-bottom: 16px;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 20px;
             color: #0a3d4d;
+            letter-spacing: -0.3px;
         }
 
         h4 {
-            font-size: 1.1rem;
+            font-size: 0.95rem;
+            font-weight: 700;
             margin-bottom: 12px;
             text-transform: uppercase;
-            letter-spacing: 1.2px;
+            letter-spacing: 1px;
             color: #0a3d4d;
         }
 
         p {
             font-size: 1rem;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
             color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        strong {
+            font-weight: 600;
+            color: #0a3d4d;
         }
 
         /* ========== HEADER SECTION ========== */
         header {
             background: white;
-            border-radius: 16px;
-            padding: 56px 40px;
-            margin-bottom: 48px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+            border-radius: 12px;
+            padding: 60px 40px;
+            margin-bottom: 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             text-align: center;
-        }
-
-        header h1 {
-            color: #0a3d4d;
-            font-size: 2.8rem;
-            margin-bottom: 8px;
-            font-weight: 800;
         }
 
         .header-tagline {
             color: #5bb3c4;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             font-weight: 600;
             margin-bottom: 24px;
-            letter-spacing: 0.3px;
+            letter-spacing: 0.5px;
         }
 
         .header-report-title {
             color: #0a3d4d;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             font-weight: 700;
-            margin-bottom: 32px;
+            margin-bottom: 40px;
             padding-bottom: 24px;
             border-bottom: 2px solid #e8f4f8;
         }
@@ -110,123 +112,116 @@
             color: #5bb3c4;
             font-size: 0.95rem;
             line-height: 1.8;
-            margin-top: 0;
         }
 
         .report-meta p {
-            margin-bottom: 6px;
+            margin-bottom: 8px;
             font-weight: 500;
         }
 
         .report-meta strong {
             color: #0a3d4d;
-            font-weight: 700;
+        }
+
+        /* ========== SECTION SPACING ========== */
+        section {
+            margin-bottom: 60px;
         }
 
         /* ========== EXECUTIVE SUMMARY ========== */
         .executive-summary {
             background: white;
-            border-radius: 16px;
-            padding: 48px 40px;
-            margin-bottom: 48px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
-        }
-
-        .executive-summary h2 {
-            width: 100%;
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 3px solid #5bb3c4;
+            border-radius: 12px;
+            padding: 50px 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
 
         .metrics-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
             gap: 24px;
+            margin-top: 40px;
         }
 
         .metric-card {
             background: linear-gradient(135deg, #0a3d4d 0%, #0d5a6e 100%);
             color: white;
-            border-radius: 12px;
-            padding: 24px 20px;
+            border-radius: 10px;
+            padding: 28px 20px;
             text-align: center;
-            box-shadow: 0 4px 12px rgba(10, 61, 77, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 12px rgba(10, 61, 77, 0.15);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .metric-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 20px rgba(10, 61, 77, 0.3);
+            transform: translateY(-6px);
+            box-shadow: 0 8px 24px rgba(10, 61, 77, 0.25);
         }
 
         .metric-card .label {
-            font-size: 0.85rem;
-            font-weight: 600;
+            font-size: 0.8rem;
+            font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
             color: #a8d8e8;
         }
 
         .metric-card .value {
-            font-size: 2.2rem;
+            font-size: 2.4rem;
             font-weight: 800;
             color: #ffc107;
             line-height: 1;
+            margin-bottom: 4px;
         }
 
         .metric-card .unit {
             font-size: 0.75rem;
             color: #a8d8e8;
-            margin-top: 4px;
         }
 
         /* ========== CAMPAIGN SECTION ========== */
         .campaign-section {
             background: white;
-            border-radius: 16px;
-            padding: 48px 40px;
-            margin-bottom: 48px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
-        }
-
-        .campaign-section h2 {
-            width: 100%;
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 3px solid #5bb3c4;
+            border-radius: 12px;
+            padding: 50px 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
 
         .campaign-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
             gap: 32px;
+            margin-top: 40px;
         }
 
         .campaign-card {
-            border: 2px solid #e8f4f8;
-            border-radius: 12px;
+            border: 1px solid #e8f4f8;
+            border-radius: 10px;
             overflow: hidden;
+            box-shadow: 0 4px 12px rgba(10, 61, 77, 0.08);
             transition: all 0.3s ease;
         }
 
         .campaign-card:hover {
             border-color: #5bb3c4;
-            box-shadow: 0 8px 24px rgba(91, 179, 196, 0.15);
+            box-shadow: 0 8px 24px rgba(91, 179, 196, 0.12);
         }
 
         .campaign-header {
             background: linear-gradient(90deg, #0a3d4d 0%, #0d5a6e 100%);
             color: white;
-            padding: 24px;
+            padding: 28px 24px;
             border-bottom: 3px solid #ffc107;
         }
 
         .campaign-header h3 {
             color: white;
-            font-size: 1.6rem;
-            margin-bottom: 4px;
+            font-size: 1.5rem;
+            margin-bottom: 6px;
         }
 
         .campaign-status {
@@ -242,7 +237,7 @@
         .metrics-table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 16px;
+            margin-bottom: 24px;
         }
 
         .metrics-table tr {
@@ -254,28 +249,28 @@
         }
 
         .metrics-table td {
-            padding: 12px 0;
+            padding: 14px 0;
             font-size: 0.95rem;
         }
 
         .metrics-table td:first-child {
             color: #5bb3c4;
-            font-weight: 600;
-            width: 40%;
+            font-weight: 700;
+            width: 50%;
         }
 
         .metrics-table td:last-child {
             text-align: right;
-            color: #2c3e50;
+            color: #0a3d4d;
             font-weight: 700;
         }
 
         .campaign-note {
             background: #f0f8fb;
             border-left: 4px solid #5bb3c4;
-            padding: 16px;
-            border-radius: 4px;
-            font-size: 0.9rem;
+            padding: 18px;
+            border-radius: 6px;
+            font-size: 0.95rem;
             color: #0a3d4d;
             line-height: 1.6;
         }
@@ -283,30 +278,23 @@
         /* ========== RANKINGS SECTION ========== */
         .rankings-section {
             background: white;
-            border-radius: 16px;
-            padding: 48px 40px;
-            margin-bottom: 48px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
-        }
-
-        .rankings-section h2 {
-            width: 100%;
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 3px solid #5bb3c4;
+            border-radius: 12px;
+            padding: 50px 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
 
         .rankings-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 24px;
+            margin-top: 40px;
         }
 
         .ranking-card {
             background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
-            border: 2px solid #e8f4f8;
-            border-radius: 12px;
-            padding: 24px;
+            border: 1px solid #e8f4f8;
+            border-radius: 10px;
+            padding: 32px 24px;
             text-align: center;
             transition: all 0.3s ease;
         }
@@ -314,210 +302,503 @@
         .ranking-card:hover {
             border-color: #5bb3c4;
             box-shadow: 0 8px 20px rgba(91, 179, 196, 0.1);
+            transform: translateY(-4px);
         }
 
         .ranking-medal {
-            font-size: 3rem;
-            margin-bottom: 12px;
+            font-size: 3.2rem;
+            margin-bottom: 16px;
+            display: block;
         }
 
         .ranking-card h4 {
-            margin-bottom: 8px;
+            margin-bottom: 12px;
+            font-size: 0.9rem;
         }
 
         .ranking-value {
-            font-size: 1.8rem;
+            font-size: 1.9rem;
             color: #5bb3c4;
             font-weight: 800;
-            margin: 12px 0;
+            margin: 16px 0;
+            line-height: 1;
         }
 
         .ranking-metric {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             color: #5bb3c4;
             text-transform: uppercase;
             letter-spacing: 1px;
+            margin-bottom: 12px;
         }
 
-        /* ========== KEY TAKEAWAYS ========== */
+        .ranking-card p {
+            font-size: 0.9rem;
+            color: #0a3d4d;
+            margin-bottom: 0;
+        }
+
+        /* ========== TAKEAWAYS SECTION ========== */
         .takeaways-section {
             background: white;
-            border-radius: 16px;
-            padding: 48px 40px;
-            margin-bottom: 48px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
-        }
-
-        .takeaways-section h2 {
-            width: 100%;
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 3px solid #5bb3c4;
+            border-radius: 12px;
+            padding: 50px 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
 
         .takeaway-list {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 24px;
+            margin-top: 40px;
         }
 
         .takeaway-item {
             border-left: 4px solid #5bb3c4;
-            padding: 20px 24px;
+            padding: 24px;
             background: #f0f8fb;
-            border-radius: 8px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .takeaway-item:hover {
+            background: #e8f4f9;
+            box-shadow: 0 4px 12px rgba(91, 179, 196, 0.1);
         }
 
         .takeaway-item h4 {
             color: #0a3d4d;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
         }
 
         .takeaway-item p {
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             color: #0a3d4d;
-            line-height: 1.6;
+            line-height: 1.7;
+            margin-bottom: 0;
         }
 
         /* ========== MOVING FORWARD SECTION ========== */
         .moving-forward {
             background: linear-gradient(135deg, #0a3d4d 0%, #0d5a6e 100%);
             color: white;
-            border-radius: 16px;
-            padding: 48px 40px;
-            margin-bottom: 48px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+            border-radius: 12px;
+            padding: 50px 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
 
         .moving-forward h2 {
             color: white;
-            border-bottom: 3px solid #ffc107;
+            border-bottom-color: #ffc107;
             margin-bottom: 32px;
         }
 
         .moving-forward p {
             color: #a8d8e8;
             margin-bottom: 16px;
+            font-size: 1rem;
+            line-height: 1.7;
         }
 
         .moving-forward strong {
             color: #ffc107;
+            font-weight: 700;
         }
 
         /* ========== FOOTER ========== */
         footer {
             background: white;
-            border-radius: 16px;
-            padding: 32px 40px;
+            border-radius: 12px;
+            padding: 40px;
             text-align: center;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-top: 60px;
         }
 
         footer p {
             font-size: 0.9rem;
             color: #5bb3c4;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
 
         footer strong {
             color: #0a3d4d;
+            font-weight: 700;
         }
 
-        /* ========== RESPONSIVE ========== */
-        @media (max-width: 768px) {
+        footer p:last-child {
+            margin-bottom: 0;
+            margin-top: 16px;
+            font-size: 0.85rem;
+        }
+
+        /* ========== RESPONSIVE DESIGN ========== */
+        @media (max-width: 1024px) {
+            body {
+                padding: 32px 16px;
+            }
+
             header {
-                padding: 32px 24px;
+                padding: 48px 32px;
+                margin-bottom: 48px;
             }
 
             header h1 {
-                font-size: 2rem;
-            }
-
-            .header-report-title {
-                font-size: 1.2rem;
+                font-size: 2.2rem;
             }
 
             h2 {
-                font-size: 1.6rem;
+                font-size: 1.7rem;
+                margin-bottom: 32px;
             }
 
-            .executive-summary, .campaign-section, .rankings-section, .takeaways-section, .moving-forward, footer {
+            .executive-summary,
+            .campaign-section,
+            .rankings-section,
+            .takeaways-section,
+            .moving-forward,
+            footer {
+                padding: 40px 32px;
+            }
+
+            .metrics-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+
+            .campaign-grid {
+                grid-template-columns: 1fr;
+                gap: 28px;
+            }
+
+            .metric-card {
+                padding: 24px 16px;
+            }
+
+            .metric-card .value {
+                font-size: 2.2rem;
+            }
+
+            section {
+                margin-bottom: 48px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 24px 12px;
+            }
+
+            header {
+                padding: 40px 24px;
+                margin-bottom: 40px;
+            }
+
+            header h1 {
+                font-size: 1.9rem;
+            }
+
+            .header-tagline {
+                font-size: 1.1rem;
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                margin-bottom: 28px;
+                padding-bottom: 16px;
+            }
+
+            h3 {
+                font-size: 1.2rem;
+                margin-bottom: 16px;
+            }
+
+            .executive-summary,
+            .campaign-section,
+            .rankings-section,
+            .takeaways-section,
+            .moving-forward,
+            footer {
                 padding: 32px 24px;
             }
 
             .metrics-grid {
                 grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+
+            .metric-card {
+                padding: 20px 12px;
+            }
+
+            .metric-card .label {
+                font-size: 0.75rem;
+                margin-bottom: 8px;
+            }
+
+            .metric-card .value {
+                font-size: 1.9rem;
+            }
+
+            .metric-card .unit {
+                font-size: 0.7rem;
             }
 
             .campaign-grid {
                 grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .campaign-header {
+                padding: 24px;
+            }
+
+            .campaign-header h3 {
+                font-size: 1.3rem;
+            }
+
+            .campaign-body {
+                padding: 24px;
             }
 
             .rankings-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+
+            .ranking-medal {
+                font-size: 2.8rem;
+                margin-bottom: 12px;
+            }
+
+            .ranking-value {
+                font-size: 1.6rem;
+                margin: 12px 0;
             }
 
             .takeaway-list {
                 grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .takeaway-item {
+                padding: 20px;
+            }
+
+            .moving-forward {
+                padding: 32px 24px;
+            }
+
+            section {
+                margin-bottom: 40px;
             }
         }
 
         @media (max-width: 480px) {
             body {
-                padding: 12px;
+                padding: 16px 8px;
             }
 
             header {
-                padding: 24px 16px;
-                margin-bottom: 24px;
+                padding: 32px 16px;
+                margin-bottom: 32px;
+                border-radius: 8px;
             }
 
             header h1 {
-                font-size: 1.5rem;
+                font-size: 1.6rem;
+                margin-bottom: 12px;
             }
 
             .header-tagline {
                 font-size: 1rem;
+                margin-bottom: 16px;
+            }
+
+            .header-report-title {
+                font-size: 1.2rem;
+                margin-bottom: 24px;
+            }
+
+            .report-meta p {
+                font-size: 0.85rem;
             }
 
             h2 {
                 font-size: 1.3rem;
-                margin-bottom: 20px;
+                margin-bottom: 24px;
+                padding-bottom: 12px;
             }
 
             h3 {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
+                margin-bottom: 12px;
             }
 
-            .executive-summary, .campaign-section, .rankings-section, .takeaways-section, .moving-forward, footer {
-                padding: 20px 16px;
-                margin-bottom: 24px;
+            h4 {
+                font-size: 0.85rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+                margin-bottom: 10px;
+            }
+
+            .executive-summary,
+            .campaign-section,
+            .rankings-section,
+            .takeaways-section,
+            .moving-forward,
+            footer {
+                padding: 24px 16px;
+                border-radius: 8px;
             }
 
             .metrics-grid {
                 grid-template-columns: 1fr;
-                gap: 16px;
+                gap: 12px;
+                margin-top: 24px;
             }
 
             .metric-card {
-                padding: 20px 16px;
+                padding: 18px 12px;
+            }
+
+            .metric-card .label {
+                font-size: 0.7rem;
+                margin-bottom: 6px;
             }
 
             .metric-card .value {
-                font-size: 1.8rem;
+                font-size: 1.7rem;
+            }
+
+            .campaign-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+                margin-top: 24px;
+            }
+
+            .campaign-header {
+                padding: 20px;
+            }
+
+            .campaign-header h3 {
+                font-size: 1.15rem;
             }
 
             .campaign-body {
-                padding: 20px 16px;
+                padding: 20px;
             }
 
             .metrics-table td {
                 padding: 10px 0;
-                font-size: 0.9rem;
+                font-size: 0.85rem;
+            }
+
+            .campaign-note {
+                padding: 16px;
+                font-size: 0.85rem;
+            }
+
+            .rankings-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+                margin-top: 24px;
+            }
+
+            .ranking-medal {
+                font-size: 2.4rem;
+                margin-bottom: 8px;
+            }
+
+            .ranking-card h4 {
+                font-size: 0.8rem;
+            }
+
+            .ranking-value {
+                font-size: 1.5rem;
+                margin: 10px 0;
+            }
+
+            .ranking-metric {
+                font-size: 0.7rem;
+                margin-bottom: 8px;
+            }
+
+            .ranking-card p {
+                font-size: 0.8rem;
+            }
+
+            .takeaway-list {
+                grid-template-columns: 1fr;
+                gap: 12px;
+                margin-top: 24px;
             }
 
             .takeaway-item {
                 padding: 16px;
+                border-left-width: 3px;
+            }
+
+            .takeaway-item h4 {
+                margin-bottom: 8px;
+            }
+
+            .takeaway-item p {
+                font-size: 0.85rem;
+            }
+
+            .moving-forward {
+                margin-top: 40px;
+            }
+
+            .moving-forward p {
+                font-size: 0.9rem;
+                margin-bottom: 14px;
+            }
+
+            footer {
+                padding: 24px 16px;
+                margin-top: 40px;
+            }
+
+            footer p {
+                font-size: 0.8rem;
+            }
+
+            section {
+                margin-bottom: 32px;
+            }
+        }
+
+        /* ========== PRINT STYLES ========== */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            header,
+            .executive-summary,
+            .campaign-section,
+            .rankings-section,
+            .takeaways-section,
+            .moving-forward,
+            footer {
+                box-shadow: none;
+                page-break-inside: avoid;
+                margin-bottom: 20px;
+            }
+
+            .metric-card:hover {
+                transform: none;
+            }
+
+            section {
+                margin-bottom: 20px;
             }
         }
     </style>
@@ -670,21 +951,21 @@
             <h2>Performance Rankings</h2>
             <div class="rankings-grid">
                 <div class="ranking-card">
-                    <div class="ranking-medal">🥇</div>
+                    <span class="ranking-medal">🥇</span>
                     <h4>Highest CTR</h4>
                     <div class="ranking-metric">Click-Through Rate</div>
                     <div class="ranking-value">7.23%</div>
                     <p><strong>Downey Campaign</strong><br>Exceptional engagement rate</p>
                 </div>
                 <div class="ranking-card">
-                    <div class="ranking-medal">🥈</div>
+                    <span class="ranking-medal">🥈</span>
                     <h4>Best Cost Efficiency</h4>
                     <div class="ranking-metric">Cost Per Conversion</div>
                     <div class="ranking-value">$44.34</div>
                     <p><strong>Downey Campaign</strong><br>Strong ROI for conversions</p>
                 </div>
                 <div class="ranking-card">
-                    <div class="ranking-medal">🥉</div>
+                    <span class="ranking-medal">🥉</span>
                     <h4>Most Impressions</h4>
                     <div class="ranking-metric">Reach & Visibility</div>
                     <div class="ranking-value">1,882</div>
@@ -728,9 +1009,9 @@
         <section class="moving-forward">
             <h2>What's Coming Next</h2>
             <p>Your campaigns are currently running in <strong>"Maximize Clicks"</strong> mode, which means we're focused on gathering learning data about your customers. This is the right approach for the first 30 days.</p>
-            
+
             <p><strong>In approximately 30 days (or sooner if you hit 30 conversions), we will transition to "Maximize Conversions"</strong> bidding strategy. This will tell Google's AI to prioritize quality leads over volume, typically improving your cost-per-conversion by 15-40%.</p>
-            
+
             <p><strong>What this means for you:</strong></p>
             <p>✅ Campaigns continue running with zero changes from your end<br>
             ✅ We monitor and optimize every single day<br>
@@ -744,7 +1025,7 @@
             <p><strong>Report Status:</strong> Health Check - Data via Google Ads API</p>
             <p><strong>Report Generated:</strong> November 24, 2025</p>
             <p><strong>Next Review:</strong> November 25, 2025 (Continuous Daily Monitoring)</p>
-            <p style="margin-top: 16px; font-size: 0.85rem;">For questions or updates, contact the Poppy Marketing & Consulting team.</p>
+            <p>For questions or updates, contact the Poppy Marketing & Consulting team.</p>
         </footer>
     </div>
 </body>
