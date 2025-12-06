@@ -1,0 +1,513 @@
+{
+  "report_date": "2025-12-06T09:18:40.563359",
+  "period": {
+    "start": "2025-11-19",
+    "end": "2025-12-05"
+  },
+  "downey": {
+    "campaign_name": "Daisy MD - Downey - Consolidated",
+    "campaign_id": "23273585706",
+    "daily_data": [
+      {
+        "date": "2025-11-19",
+        "impressions": 359,
+        "clicks": 18,
+        "ctr": "5.01%",
+        "cost": "$47.23",
+        "cpc": "$2.62",
+        "conversions": 0.0,
+        "conversion_rate": "0.00%"
+      },
+      {
+        "date": "2025-11-20",
+        "impressions": 283,
+        "clicks": 23,
+        "ctr": "8.13%",
+        "cost": "$47.31",
+        "cpc": "$2.06",
+        "conversions": 2.0,
+        "conversion_rate": "869.57%"
+      },
+      {
+        "date": "2025-11-21",
+        "impressions": 289,
+        "clicks": 22,
+        "ctr": "7.61%",
+        "cost": "$41.53",
+        "cpc": "$1.89",
+        "conversions": 0.0,
+        "conversion_rate": "0.00%"
+      },
+      {
+        "date": "2025-11-22",
+        "impressions": 301,
+        "clicks": 23,
+        "ctr": "7.64%",
+        "cost": "$39.15",
+        "cpc": "$1.70",
+        "conversions": 1.0,
+        "conversion_rate": "434.78%"
+      },
+      {
+        "date": "2025-11-23",
+        "impressions": 356,
+        "clicks": 27,
+        "ctr": "7.58%",
+        "cost": "$46.82",
+        "cpc": "$1.73",
+        "conversions": 1.0,
+        "conversion_rate": "370.37%"
+      },
+      {
+        "date": "2025-11-24",
+        "impressions": 293,
+        "clicks": 22,
+        "ctr": "7.51%",
+        "cost": "$35.30",
+        "cpc": "$1.60",
+        "conversions": 1.0,
+        "conversion_rate": "454.55%"
+      },
+      {
+        "date": "2025-11-25",
+        "impressions": 342,
+        "clicks": 22,
+        "ctr": "6.43%",
+        "cost": "$36.07",
+        "cpc": "$1.64",
+        "conversions": 2.0,
+        "conversion_rate": "909.09%"
+      },
+      {
+        "date": "2025-11-26",
+        "impressions": 295,
+        "clicks": 14,
+        "ctr": "4.75%",
+        "cost": "$23.37",
+        "cpc": "$1.67",
+        "conversions": 0.0,
+        "conversion_rate": "0.00%"
+      },
+      {
+        "date": "2025-11-27",
+        "impressions": 416,
+        "clicks": 24,
+        "ctr": "5.77%",
+        "cost": "$53.86",
+        "cpc": "$2.24",
+        "conversions": 0.0,
+        "conversion_rate": "0.00%"
+      },
+      {
+        "date": "2025-11-28",
+        "impressions": 456,
+        "clicks": 22,
+        "ctr": "4.82%",
+        "cost": "$48.90",
+        "cpc": "$2.22",
+        "conversions": 1.0,
+        "conversion_rate": "454.55%"
+      },
+      {
+        "date": "2025-11-29",
+        "impressions": 227,
+        "clicks": 22,
+        "ctr": "9.69%",
+        "cost": "$42.28",
+        "cpc": "$1.92",
+        "conversions": 2.0,
+        "conversion_rate": "909.09%"
+      },
+      {
+        "date": "2025-11-30",
+        "impressions": 201,
+        "clicks": 21,
+        "ctr": "10.45%",
+        "cost": "$36.54",
+        "cpc": "$1.74",
+        "conversions": 2.0,
+        "conversion_rate": "952.38%"
+      },
+      {
+        "date": "2025-12-01",
+        "impressions": 352,
+        "clicks": 20,
+        "ctr": "5.68%",
+        "cost": "$40.97",
+        "cpc": "$2.05",
+        "conversions": 0.0,
+        "conversion_rate": "0.00%"
+      },
+      {
+        "date": "2025-12-02",
+        "impressions": 308,
+        "clicks": 23,
+        "ctr": "7.47%",
+        "cost": "$43.61",
+        "cpc": "$1.90",
+        "conversions": 0.0,
+        "conversion_rate": "0.00%"
+      },
+      {
+        "date": "2025-12-03",
+        "impressions": 368,
+        "clicks": 21,
+        "ctr": "5.71%",
+        "cost": "$40.20",
+        "cpc": "$1.91",
+        "conversions": 0.0,
+        "conversion_rate": "0.00%"
+      },
+      {
+        "date": "2025-12-04",
+        "impressions": 313,
+        "clicks": 23,
+        "ctr": "7.35%",
+        "cost": "$40.63",
+        "cpc": "$1.77",
+        "conversions": 0.0,
+        "conversion_rate": "0.00%"
+      },
+      {
+        "date": "2025-12-05",
+        "impressions": 336,
+        "clicks": 14,
+        "ctr": "4.17%",
+        "cost": "$23.64",
+        "cpc": "$1.69",
+        "conversions": 1.0,
+        "conversion_rate": "714.29%"
+      }
+    ],
+    "totals": {
+      "impressions": 5495,
+      "clicks": 361,
+      "ctr": "6.57%",
+      "cost": "$687.39",
+      "conversions": 13,
+      "conversion_rate": "3.60%",
+      "avg_cpc": "$1.90",
+      "days": 17
+    }
+  },
+  "van_nuys": {
+    "campaign_name": "Daisy MD - Van Nuys - Consolidated",
+    "campaign_id": "23278675853",
+    "daily_data": [
+      {
+        "date": "2025-11-19",
+        "impressions": 227,
+        "clicks": 18,
+        "ctr": "7.93%",
+        "cost": "$67.88",
+        "cpc": "$3.77",
+        "conversions": 0.0,
+        "conversion_rate": "0.00%"
+      },
+      {
+        "date": "2025-11-20",
+        "impressions": 200,
+        "clicks": 17,
+        "ctr": "8.50%",
+        "cost": "$50.79",
+        "cpc": "$2.99",
+        "conversions": 0.0,
+        "conversion_rate": "0.00%"
+      },
+      {
+        "date": "2025-11-21",
+        "impressions": 257,
+        "clicks": 12,
+        "ctr": "4.67%",
+        "cost": "$35.74",
+        "cpc": "$2.98",
+        "conversions": 0.0,
+        "conversion_rate": "0.00%"
+      },
+      {
+        "date": "2025-11-22",
+        "impressions": 182,
+        "clicks": 18,
+        "ctr": "9.89%",
+        "cost": "$50.33",
+        "cpc": "$2.80",
+        "conversions": 1.0,
+        "conversion_rate": "555.56%"
+      },
+      {
+        "date": "2025-11-23",
+        "impressions": 216,
+        "clicks": 17,
+        "ctr": "7.87%",
+        "cost": "$40.08",
+        "cpc": "$2.36",
+        "conversions": 0.0,
+        "conversion_rate": "0.00%"
+      },
+      {
+        "date": "2025-11-24",
+        "impressions": 196,
+        "clicks": 17,
+        "ctr": "8.67%",
+        "cost": "$41.04",
+        "cpc": "$2.41",
+        "conversions": 0.0,
+        "conversion_rate": "0.00%"
+      },
+      {
+        "date": "2025-11-25",
+        "impressions": 232,
+        "clicks": 12,
+        "ctr": "5.17%",
+        "cost": "$28.81",
+        "cpc": "$2.40",
+        "conversions": 0.0,
+        "conversion_rate": "0.00%"
+      },
+      {
+        "date": "2025-11-26",
+        "impressions": 251,
+        "clicks": 14,
+        "ctr": "5.58%",
+        "cost": "$36.23",
+        "cpc": "$2.59",
+        "conversions": 0.0,
+        "conversion_rate": "0.00%"
+      },
+      {
+        "date": "2025-11-27",
+        "impressions": 245,
+        "clicks": 17,
+        "ctr": "6.94%",
+        "cost": "$57.23",
+        "cpc": "$3.37",
+        "conversions": 0.0,
+        "conversion_rate": "0.00%"
+      },
+      {
+        "date": "2025-11-28",
+        "impressions": 149,
+        "clicks": 11,
+        "ctr": "7.38%",
+        "cost": "$30.35",
+        "cpc": "$2.76",
+        "conversions": 0.0,
+        "conversion_rate": "0.00%"
+      },
+      {
+        "date": "2025-11-29",
+        "impressions": 210,
+        "clicks": 11,
+        "ctr": "5.24%",
+        "cost": "$28.03",
+        "cpc": "$2.55",
+        "conversions": 0.0,
+        "conversion_rate": "0.00%"
+      },
+      {
+        "date": "2025-11-30",
+        "impressions": 280,
+        "clicks": 13,
+        "ctr": "4.64%",
+        "cost": "$35.49",
+        "cpc": "$2.73",
+        "conversions": 1.0,
+        "conversion_rate": "769.23%"
+      },
+      {
+        "date": "2025-12-01",
+        "impressions": 225,
+        "clicks": 12,
+        "ctr": "5.33%",
+        "cost": "$39.54",
+        "cpc": "$3.29",
+        "conversions": 0.0,
+        "conversion_rate": "0.00%"
+      },
+      {
+        "date": "2025-12-02",
+        "impressions": 199,
+        "clicks": 14,
+        "ctr": "7.04%",
+        "cost": "$39.56",
+        "cpc": "$2.83",
+        "conversions": 1.0,
+        "conversion_rate": "714.29%"
+      },
+      {
+        "date": "2025-12-03",
+        "impressions": 223,
+        "clicks": 16,
+        "ctr": "7.17%",
+        "cost": "$42.71",
+        "cpc": "$2.67",
+        "conversions": 0.0,
+        "conversion_rate": "0.00%"
+      },
+      {
+        "date": "2025-12-04",
+        "impressions": 195,
+        "clicks": 6,
+        "ctr": "3.08%",
+        "cost": "$13.27",
+        "cpc": "$2.21",
+        "conversions": 0.0,
+        "conversion_rate": "0.00%"
+      },
+      {
+        "date": "2025-12-05",
+        "impressions": 230,
+        "clicks": 13,
+        "ctr": "5.65%",
+        "cost": "$30.35",
+        "cpc": "$2.33",
+        "conversions": 1.0,
+        "conversion_rate": "769.23%"
+      }
+    ],
+    "totals": {
+      "impressions": 3717,
+      "clicks": 238,
+      "ctr": "6.40%",
+      "cost": "$667.43",
+      "conversions": 4,
+      "conversion_rate": "1.68%",
+      "avg_cpc": "$2.80",
+      "days": 17
+    }
+  },
+  "weekly_snapshot": {
+    "downey": {
+      "campaign_name": "Daisy MD - Downey - Consolidated",
+      "campaign_id": "23273585706",
+      "daily_data": [
+        {
+          "date": "2025-12-01",
+          "impressions": 352,
+          "clicks": 20,
+          "ctr": "5.68%",
+          "cost": "$40.97",
+          "cpc": "$2.05",
+          "conversions": 0.0,
+          "conversion_rate": "0.00%"
+        },
+        {
+          "date": "2025-12-02",
+          "impressions": 308,
+          "clicks": 23,
+          "ctr": "7.47%",
+          "cost": "$43.61",
+          "cpc": "$1.90",
+          "conversions": 0.0,
+          "conversion_rate": "0.00%"
+        },
+        {
+          "date": "2025-12-03",
+          "impressions": 368,
+          "clicks": 21,
+          "ctr": "5.71%",
+          "cost": "$40.20",
+          "cpc": "$1.91",
+          "conversions": 0.0,
+          "conversion_rate": "0.00%"
+        },
+        {
+          "date": "2025-12-04",
+          "impressions": 313,
+          "clicks": 23,
+          "ctr": "7.35%",
+          "cost": "$40.63",
+          "cpc": "$1.77",
+          "conversions": 0.0,
+          "conversion_rate": "0.00%"
+        },
+        {
+          "date": "2025-12-05",
+          "impressions": 336,
+          "clicks": 14,
+          "ctr": "4.17%",
+          "cost": "$23.64",
+          "cpc": "$1.69",
+          "conversions": 1.0,
+          "conversion_rate": "714.29%"
+        }
+      ],
+      "totals": {
+        "impressions": 1677,
+        "clicks": 101,
+        "ctr": "6.02%",
+        "cost": "$189.04",
+        "conversions": 1,
+        "conversion_rate": "0.99%",
+        "avg_cpc": "$1.87",
+        "days": 5
+      }
+    },
+    "van_nuys": {
+      "campaign_name": "Daisy MD - Van Nuys - Consolidated",
+      "campaign_id": "23278675853",
+      "daily_data": [
+        {
+          "date": "2025-12-01",
+          "impressions": 225,
+          "clicks": 12,
+          "ctr": "5.33%",
+          "cost": "$39.54",
+          "cpc": "$3.29",
+          "conversions": 0.0,
+          "conversion_rate": "0.00%"
+        },
+        {
+          "date": "2025-12-02",
+          "impressions": 199,
+          "clicks": 14,
+          "ctr": "7.04%",
+          "cost": "$39.56",
+          "cpc": "$2.83",
+          "conversions": 1.0,
+          "conversion_rate": "714.29%"
+        },
+        {
+          "date": "2025-12-03",
+          "impressions": 223,
+          "clicks": 16,
+          "ctr": "7.17%",
+          "cost": "$42.71",
+          "cpc": "$2.67",
+          "conversions": 0.0,
+          "conversion_rate": "0.00%"
+        },
+        {
+          "date": "2025-12-04",
+          "impressions": 195,
+          "clicks": 6,
+          "ctr": "3.08%",
+          "cost": "$13.27",
+          "cpc": "$2.21",
+          "conversions": 0.0,
+          "conversion_rate": "0.00%"
+        },
+        {
+          "date": "2025-12-05",
+          "impressions": 230,
+          "clicks": 13,
+          "ctr": "5.65%",
+          "cost": "$30.35",
+          "cpc": "$2.33",
+          "conversions": 1.0,
+          "conversion_rate": "769.23%"
+        }
+      ],
+      "totals": {
+        "impressions": 1072,
+        "clicks": 61,
+        "ctr": "5.69%",
+        "cost": "$165.43",
+        "conversions": 2,
+        "conversion_rate": "3.28%",
+        "avg_cpc": "$2.71",
+        "days": 5
+      }
+    }
+  }
+}
