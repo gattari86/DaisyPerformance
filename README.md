@@ -1,152 +1,54 @@
-# Daisy MD Care - Campaign Performance Report
+# Daisy MD Care - Campaign Performance Dashboard
 
-Customer-friendly performance report for Daisy MD Care consolidated campaigns (November 19-24, 2025).
+Live performance reporting for Daisy MD Care Google Ads campaigns.
 
-## Overview
+## Current Report
 
-This is a fully responsive, mobile-friendly HTML report showing the performance of two consolidated campaigns:
-- **Downey Consolidated** - 1,882 impressions, 136 clicks, 7.23% CTR, 6 conversions at $44.34 per conversion
-- **Van Nuys Consolidated** - 1,223 impressions, 88 clicks, 7.20% CTR, 1 conversion (early stage optimization)
+**Reporting Period:** November 19 - December 15, 2025
 
-Both campaigns are performing exceptionally well with CTR significantly above industry average.
+**View Live Report:** [DaisyPerformance on Vercel](https://daisyperformance.vercel.app)
 
-## Features
+## Campaign Overview
 
-✅ **Responsive Design** - Works perfectly on mobile, tablet, and desktop
-✅ **Professional Branding** - Uses Daisy MD Care brand colors (teal, white, light accents)
-✅ **Customer-Friendly** - Clear metrics, easy-to-understand comparisons
-✅ **Print-Ready** - Optimized for printing and PDF export
-✅ **Fast Loading** - Single HTML file, no external dependencies
-✅ **Accessible** - Clean semantic HTML, proper contrast ratios
+### Downey Campaign
+- **Status:** Maximize Conversions (upgraded December 10, 2025)
+- **Impressions:** 8,600+
+- **Clicks:** 560+
+- **Conversions:** 18+
+- **Cost Per Conversion:** ~$60
 
-## Design Elements
+### Van Nuys Campaign
+- **Status:** Maximize Clicks (building conversion data)
+- **Impressions:** 5,600+
+- **Clicks:** 360+
+- **Conversions:** 6+
+- **Cost Per Conversion:** ~$170
 
-- **Primary Color**: #0a3d4d (Dark Teal)
-- **Secondary Color**: #5bb3c4 (Light Teal)
-- **Accent Color**: #ffc107 (Gold for highlights)
-- **Background Gradient**: From dark teal to lighter teal
-- **Typography**: System fonts for maximum compatibility
+## Key Highlights
 
-## Sections
+- **Total Conversions:** 24+ leads generated
+- **Average CTR:** 6.5% (industry average: 2-3%)
+- **Total Investment:** ~$2,100
 
-1. **Header** - Brand introduction and reporting period
-2. **Executive Summary** - 6 key metrics in a responsive grid
-3. **Campaign Breakdown** - Detailed tables for each consolidated campaign with insights
-4. **Performance Rankings** - Top performers across different metrics
-5. **Key Takeaways** - Summary of what's working and next steps
-6. **Moving Forward** - Introduction to the 30-day optimization strategy
-7. **Footer** - Report metadata and contact information
+## Strategy Notes
 
-## Campaign Data (November 19-24, 2025)
+### Downey - Maximize Conversions (as of Dec 10)
+The Downey campaign has gathered enough data for Google's AI to understand what a quality lead looks like. We've upgraded from Maximize Clicks to Maximize Conversions for better lead quality and cost efficiency.
 
-### Downey Consolidated Campaign
-- **Status**: ENABLED ✅
-- **Campaign ID**: 23273585706
-- **Impressions**: 1,882
-- **Clicks**: 136
-- **CTR**: 7.23% (Excellent - 2-3x industry average)
-- **CPC**: $1.96 (Competitive)
-- **Conversions**: 6
-- **Cost Per Conversion**: $44.34 (Strong ROI)
-- **Total Spend**: $266.05
+### Van Nuys - Maximize Clicks (Building Data)
+Van Nuys remains on Maximize Clicks while we build conversion history. Once we reach 15+ conversions within a 30-day window, we'll make the same upgrade. This is an intentional, data-backed decision - not a performance issue.
 
-### Van Nuys Consolidated Campaign
-- **Status**: ENABLED ✅
-- **Campaign ID**: 23278675853
-- **Impressions**: 1,223
-- **Clicks**: 88
-- **CTR**: 7.20% (Excellent - 2-3x industry average)
-- **CPC**: $2.94 (Healthy for this market)
-- **Conversions**: 1
-- **Cost Per Conversion**: $259.13 (Early stage)
-- **Total Spend**: $259.13
+## Files
 
-## Key Insights
+- `index.html` - Full performance report (responsive design)
+- `mobile.html` - Mobile-optimized version
+- `DAISY_MD_PERFORMANCE_DATA_11_19_to_12_15_2025.json` - Performance data
 
-✅ **Top 20% Performance** - Both campaigns are performing better than 80% of similar campaigns in the industry
+## Report Updates
 
-✅ **Daily & Weekly Monitoring** - All campaigns are reviewed every single day and every week for targeting optimization and conversion improvement
+Reports are updated weekly with the latest campaign performance data.
 
-✅ **Smart Bidding Strategy** - Currently using "Maximize Clicks" mode to gather learning data. This will transition to "Maximize Conversions" at the 30-day mark or when 30 conversions are achieved (whichever comes first)
+---
 
-✅ **Expected Improvements** - When transitioning to conversion-focused bidding, cost-per-conversion should improve by 15-40%
-
-## Deployment
-
-This site is deployed on Vercel for instant, global availability.
-
-### Deploy to Vercel
-
-1. Connect your GitHub repository to Vercel
-2. Vercel auto-detects the configuration from `vercel.json`
-3. Deploy with a single push to main branch
-
-```bash
-# Push changes to trigger auto-deployment
-git add .
-git commit -m "Update campaign performance report"
-git push origin main
-```
-
-### Local Testing
-
-Simply open `index.html` in any modern web browser. No build process needed!
-
-## Mobile Responsiveness
-
-The report is optimized for all screen sizes:
-- **Desktop** (1200px+): Full multi-column grid layouts
-- **Tablet** (768px-1199px): 2-column layouts with adjusted padding
-- **Mobile** (480px-767px): Single column layout
-- **Small Mobile** (<480px): Optimized for smallest screens
-
-## Browser Support
-
-- ✅ Chrome/Chromium
-- ✅ Firefox
-- ✅ Safari
-- ✅ Edge
-- ✅ Mobile Safari
-- ✅ Chrome Mobile
-- ✅ Samsung Internet
-
-## Customization
-
-To update the report:
-
-1. Edit `index.html` directly
-2. Update metrics in the `metric-card` sections
-3. Update campaign data in the campaign cards
-4. Push changes to GitHub to auto-deploy
-
-### Key Sections to Update
-
-- **Metrics Grid** (lines 320-346): Update values in `.value` divs
-- **Campaign Cards** (lines 365-430): Update campaign data in tables
-- **Rankings** (lines 450-505): Update performance rankings
-- **Dates** (lines 310-315): Update reporting period
-
-## Performance
-
-- **Page Load Time**: < 1 second
-- **File Size**: ~41KB (single HTML file)
-- **No Dependencies**: No CDN calls, no external scripts
-- **100% SEO Friendly**: Proper semantic HTML
-
-## Monitoring & Optimization
-
-The campaigns displayed in this report are:
-- **Reviewed daily** for performance trends
-- **Optimized weekly** for targeting improvements
-- **Monitored for conversions** to understand customer behavior
-- **Tracked for cost efficiency** to ensure budget optimization
-
-All metrics are pulled directly from Google Ads API and represent actual performance data.
-
-## Support
-
-For questions or updates, contact the Poppy Marketing & Consulting team.
-
-**Report Generated**: November 24, 2025
-**Last Updated**: November 24, 2025
-**Data Source**: Google Ads API (Direct Pull)
+**Managed by:** Poppy Marketing & Consulting
+**Last Updated:** December 15, 2025

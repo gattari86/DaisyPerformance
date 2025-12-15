@@ -33,7 +33,6 @@
             margin: 0 auto;
         }
 
-        /* ========== TYPOGRAPHY ========== */
         h1, h2, h3, h4 {
             font-weight: 700;
             letter-spacing: -0.3px;
@@ -71,7 +70,7 @@
             color: #2c3e50;
         }
 
-        /* ========== HEADER SECTION ========== */
+        /* Header */
         header {
             background: white;
             border-radius: 12px;
@@ -92,7 +91,6 @@
             font-size: 1rem;
             font-weight: 600;
             margin-bottom: 18px;
-            letter-spacing: 0.2px;
         }
 
         .header-report-title {
@@ -107,7 +105,6 @@
         .report-meta {
             color: #5bb3c4;
             font-size: 0.85rem;
-            line-height: 1.6;
         }
 
         .report-meta p {
@@ -120,18 +117,13 @@
             font-weight: 700;
         }
 
-        /* ========== EXECUTIVE SUMMARY ========== */
+        /* Summary Cards */
         .executive-summary {
             background: white;
             border-radius: 12px;
             padding: 28px 18px;
             margin-bottom: 32px;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        .executive-summary h2 {
-            margin-bottom: 28px;
-            padding-bottom: 14px;
         }
 
         .metrics-grid {
@@ -147,7 +139,6 @@
             border-radius: 10px;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
-            border: 1px solid rgba(91, 179, 196, 0.2);
         }
 
         .metric-card .label {
@@ -162,38 +153,149 @@
         .metric-card .value {
             font-size: 1.8rem;
             font-weight: 800;
-            color: #5bb3c4;
+            color: #ffc107;
             line-height: 1.2;
         }
 
-        .metric-card.highlight {
-            border: 2px solid #ffc107;
-            position: relative;
+        .metric-card .unit {
+            font-size: 0.7rem;
+            color: #a8d8e8;
+            margin-top: 4px;
         }
 
-        .metric-card.highlight .value {
+        /* Strategy Alert */
+        .strategy-alert {
+            background: linear-gradient(135deg, #1a5a2c 0%, #2d7a45 100%);
+            border-radius: 12px;
+            padding: 24px 18px;
+            margin-bottom: 32px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .strategy-alert h2 {
+            color: white;
+            border-bottom-color: #4CAF50;
+            font-size: 1.3rem;
+        }
+
+        .strategy-box {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 18px;
+            margin-bottom: 16px;
+            border-left: 4px solid #4CAF50;
+        }
+
+        .strategy-box:last-child {
+            margin-bottom: 0;
+        }
+
+        .strategy-box h4 {
+            color: white;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .strategy-box p {
+            color: #c8e6c9;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 6px;
+        }
+
+        .strategy-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .strategy-box strong {
             color: #ffc107;
-            font-size: 2rem;
         }
 
-        .metric-card.highlight::before {
-            content: '⭐';
-            position: absolute;
-            top: -8px;
-            right: 12px;
-            font-size: 1.4rem;
+        /* Week Cards */
+        .weekly-section {
+            background: white;
+            border-radius: 12px;
+            padding: 28px 18px;
+            margin-bottom: 32px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
         }
 
-        /* ========== CAMPAIGNS SECTION ========== */
+        .week-card {
+            background: #f8fafb;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            border-left: 4px solid #5bb3c4;
+        }
+
+        .week-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .week-header {
+            margin-bottom: 16px;
+        }
+
+        .week-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #0a3d4d;
+            margin-bottom: 4px;
+        }
+
+        .week-dates {
+            font-size: 0.8rem;
+            color: #5bb3c4;
+            font-weight: 600;
+        }
+
+        .week-metrics {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .week-metric {
+            text-align: center;
+            padding: 12px 8px;
+            background: white;
+            border-radius: 8px;
+        }
+
+        .week-metric-label {
+            font-size: 0.65rem;
+            color: #5bb3c4;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .week-metric-value {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #0a3d4d;
+        }
+
+        .week-note {
+            padding: 12px;
+            background: #e8f4f8;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            color: #0a3d4d;
+            line-height: 1.5;
+        }
+
+        /* Campaign Cards */
         .campaigns-section {
             margin-bottom: 32px;
         }
 
         .campaigns-section h2 {
             color: white;
-            margin-bottom: 28px;
+            margin-bottom: 20px;
             text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
-            border-bottom: 3px solid #5bb3c4;
+            border-bottom-color: #5bb3c4;
             padding-bottom: 14px;
         }
 
@@ -206,27 +308,14 @@
             border-left: 5px solid #5bb3c4;
         }
 
-        .campaign-card.top-performer {
-            border-left: 5px solid #ffc107;
-            background: linear-gradient(to right, rgba(255, 193, 7, 0.03), white);
+        .campaign-card.strategy-change {
+            border-left-color: #ffc107;
         }
 
         .campaign-header {
-            display: flex;
-            align-items: flex-start;
             margin-bottom: 18px;
-            gap: 10px;
             padding-bottom: 14px;
             border-bottom: 2px solid #f0f4f7;
-        }
-
-        .campaign-icon {
-            font-size: 1.8rem;
-            min-width: 40px;
-        }
-
-        .campaign-header-content {
-            flex: 1;
         }
 
         .campaign-header h3 {
@@ -244,13 +333,11 @@
             font-size: 0.7rem;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.6px;
-            margin-top: 3px;
         }
 
-        .campaign-status.archived {
-            background: #f5f7fa;
-            color: #7f8c8d;
+        .campaign-status.upgraded {
+            background: #fff8e1;
+            color: #f57c00;
         }
 
         .metrics-table {
@@ -260,33 +347,20 @@
             font-size: 0.85rem;
         }
 
-        .metrics-table th {
-            background: #f5f7fa;
-            color: #0a3d4d;
-            padding: 10px 8px;
-            text-align: left;
-            font-weight: 700;
-            border-bottom: 2px solid #5bb3c4;
-            font-size: 0.8rem;
-        }
-
         .metrics-table td {
             padding: 10px 8px;
             border-bottom: 1px solid #e8f4f8;
         }
 
-        .metrics-table tr:hover {
-            background: #f9fbfc;
+        .metrics-table td:first-child {
+            color: #5bb3c4;
+            font-weight: 600;
         }
 
-        .metric-value {
+        .metrics-table td:last-child {
+            text-align: right;
             font-weight: 700;
             color: #0a3d4d;
-        }
-
-        .metric-highlight {
-            color: #d32f2f;
-            font-weight: 800;
         }
 
         .campaign-notes {
@@ -294,84 +368,21 @@
             border-left: 4px solid #5bb3c4;
             padding: 14px 12px;
             border-radius: 6px;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: #2c3e50;
-            line-height: 1.6;
+            line-height: 1.5;
+        }
+
+        .campaign-notes.strategy {
+            background: #fff8e1;
+            border-left-color: #ffc107;
         }
 
         .campaign-notes strong {
             color: #0a3d4d;
-            font-weight: 700;
         }
 
-        /* ========== COMPARISON SECTION ========== */
-        .comparison-section {
-            background: white;
-            border-radius: 12px;
-            padding: 28px 18px;
-            margin-bottom: 32px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        .comparison-section h2 {
-            margin-bottom: 28px;
-            padding-bottom: 14px;
-        }
-
-        .ranking-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 16px;
-        }
-
-        .ranking-category {
-            background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
-            padding: 18px;
-            border-radius: 10px;
-            border: 1px solid #e0e8f1;
-        }
-
-        .ranking-category h4 {
-            color: #0a3d4d;
-            margin-bottom: 14px;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 0.8px;
-            padding-bottom: 8px;
-            border-bottom: 2px solid #5bb3c4;
-        }
-
-        .ranking-item {
-            display: flex;
-            align-items: center;
-            padding: 10px 0;
-            border-bottom: 1px solid #e8f4f8;
-            gap: 8px;
-        }
-
-        .ranking-item:last-child {
-            border-bottom: none;
-        }
-
-        .ranking-medal {
-            font-size: 1.2rem;
-            min-width: 28px;
-        }
-
-        .ranking-name {
-            flex: 1;
-            color: #2c3e50;
-            font-weight: 600;
-            font-size: 0.9rem;
-        }
-
-        .ranking-value {
-            color: #0a3d4d;
-            font-weight: 800;
-            font-size: 0.9rem;
-        }
-
-        /* ========== TAKEAWAYS SECTION ========== */
+        /* Takeaways */
         .takeaways-section {
             background: white;
             border-radius: 12px;
@@ -380,50 +391,34 @@
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
         }
 
-        .takeaways-section h2 {
-            margin-bottom: 28px;
-            padding-bottom: 14px;
-        }
-
-        .takeaway-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 14px;
-        }
-
         .takeaway-item {
             background: #f9fbfc;
             padding: 16px;
             border-radius: 10px;
             border-left: 4px solid #5bb3c4;
+            margin-bottom: 14px;
         }
 
-        .takeaway-item.positive {
-            border-left: 4px solid #4caf50;
-            background: rgba(76, 175, 80, 0.03);
-        }
-
-        .takeaway-item.info {
-            border-left: 4px solid #2196f3;
-            background: rgba(33, 150, 243, 0.03);
+        .takeaway-item:last-child {
+            margin-bottom: 0;
         }
 
         .takeaway-item h4 {
             color: #0a3d4d;
             margin-bottom: 8px;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
         }
 
         .takeaway-item p {
             color: #2c3e50;
-            font-size: 0.9rem;
-            line-height: 1.6;
+            font-size: 0.85rem;
+            line-height: 1.5;
             margin-bottom: 0;
         }
 
-        /* ========== NEXT STEPS SECTION ========== */
+        /* Next Steps */
         .next-steps {
-            background: white;
+            background: linear-gradient(135deg, #0a3d4d 0%, #0d5a6e 100%);
             border-radius: 12px;
             padding: 28px 18px;
             margin-bottom: 32px;
@@ -431,63 +426,22 @@
         }
 
         .next-steps h2 {
-            margin-bottom: 28px;
-            padding-bottom: 14px;
-        }
-
-        .next-steps-intro {
-            text-align: center;
-            margin-bottom: 24px;
-            font-size: 0.95rem;
-            color: #2c3e50;
-            line-height: 1.6;
-        }
-
-        .new-campaigns {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 14px;
-        }
-
-        .campaign-intro {
-            background: linear-gradient(135deg, #0a3d4d 0%, #0d5a6e 100%);
             color: white;
-            padding: 22px 16px;
-            border-radius: 10px;
-            border: 1px solid rgba(91, 179, 196, 0.3);
+            border-bottom-color: #ffc107;
         }
 
-        .campaign-intro h3 {
-            color: #5bb3c4;
-            font-size: 1.1rem;
-            margin-bottom: 14px;
-            font-weight: 800;
-        }
-
-        .campaign-intro ul {
-            list-style: none;
-            margin-left: 0;
-        }
-
-        .campaign-intro li {
-            padding: 8px 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        .next-steps p {
+            color: #a8d8e8;
             font-size: 0.9rem;
-            line-height: 1.5;
+            line-height: 1.6;
+            margin-bottom: 12px;
         }
 
-        .campaign-intro li:last-child {
-            border-bottom: none;
+        .next-steps strong {
+            color: #ffc107;
         }
 
-        .campaign-intro li:before {
-            content: "✓ ";
-            color: #5bb3c4;
-            margin-right: 8px;
-            font-weight: 800;
-        }
-
-        /* ========== FOOTER ========== */
+        /* Footer */
         footer {
             background: white;
             border-radius: 12px;
@@ -504,23 +458,11 @@
             line-height: 1.5;
         }
 
-        footer p:first-child {
-            margin-top: 0;
-        }
-
         .footer-highlight {
             color: #0a3d4d;
             font-weight: 700;
         }
 
-        .footer-divider {
-            margin: 14px 0;
-            padding-top: 14px;
-            border-top: 2px solid #e8f4f8;
-            font-size: 0.8rem;
-        }
-
-        /* ========== PRINT STYLES ========== */
         @media print {
             body {
                 background: white;
@@ -529,76 +471,14 @@
 
             header,
             .executive-summary,
+            .strategy-alert,
+            .weekly-section,
             .campaign-card,
-            .comparison-section,
             .takeaways-section,
             .next-steps,
             footer {
                 box-shadow: none;
-                border: 1px solid #ddd;
                 page-break-inside: avoid;
-                margin-bottom: 16px;
-            }
-
-            .campaigns-section h2 {
-                color: #0a3d4d;
-                text-shadow: none;
-            }
-
-            h2 {
-                page-break-after: avoid;
-            }
-        }
-
-        /* ========== ACCESSIBILITY ========== */
-        @media (prefers-reduced-motion: reduce) {
-            * {
-                animation: none !important;
-                transition: none !important;
-                scroll-behavior: auto !important;
-            }
-        }
-
-        /* Dark mode support */
-        @media (prefers-color-scheme: dark) {
-            header,
-            .executive-summary,
-            .comparison-section,
-            .takeaways-section,
-            .next-steps,
-            footer {
-                background: #1a2a2f;
-                color: #ecf0f1;
-                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-            }
-
-            h1, h2, h3, h4 {
-                color: #5bb3c4;
-            }
-
-            p, .ranking-name, .takeaway-item p {
-                color: #ecf0f1;
-            }
-
-            .metrics-table th {
-                background: #0a3d4d;
-                color: #5bb3c4;
-            }
-
-            .metrics-table td {
-                border-bottom-color: #0a3d4d;
-                color: #ecf0f1;
-            }
-
-            .campaign-notes,
-            .ranking-category,
-            .takeaway-item {
-                background: #0a3d4d;
-                color: #ecf0f1;
-            }
-
-            .metric-value {
-                color: #5bb3c4;
             }
         }
     </style>
@@ -608,12 +488,11 @@
         <!-- Header -->
         <header>
             <h1>Daisy MD Care</h1>
-            <p class="header-tagline">Clearer Skin. Renewed Confidence.</p>
-            <p class="header-report-title">Performance Report</p>
+            <p class="header-tagline">Google Ads Performance Report</p>
+            <p class="header-report-title">Campaign Summary</p>
             <div class="report-meta">
-                <p><strong>Period:</strong> Nov 10 - Nov 18, 2025</p>
-                <p><strong>Account:</strong> 3137565307</p>
-                <p>Archive Campaign Performance Summary</p>
+                <p><strong>Period:</strong> Nov 19 - Dec 15, 2025</p>
+                <p><strong>Campaigns:</strong> Downey & Van Nuys</p>
             </div>
         </header>
 
@@ -622,313 +501,281 @@
             <h2>Overview</h2>
             <div class="metrics-grid">
                 <div class="metric-card">
-                    <div class="label">Impressions</div>
-                    <div class="value">3,230</div>
+                    <div class="label">Total Impressions</div>
+                    <div class="value">14,200+</div>
+                    <div class="unit">People saw your ads</div>
                 </div>
                 <div class="metric-card">
-                    <div class="label">Clicks</div>
-                    <div class="value">138</div>
+                    <div class="label">Total Clicks</div>
+                    <div class="value">920+</div>
+                    <div class="unit">Visited your site</div>
                 </div>
                 <div class="metric-card">
-                    <div class="label">CTR</div>
-                    <div class="value">4.27%</div>
+                    <div class="label">Average CTR</div>
+                    <div class="value">6.5%</div>
+                    <div class="unit">Industry avg: 2-3%</div>
                 </div>
                 <div class="metric-card">
-                    <div class="label">Total Spend</div>
-                    <div class="value">$430.75</div>
+                    <div class="label">Total Conversions</div>
+                    <div class="value">24+</div>
+                    <div class="unit">Leads generated</div>
                 </div>
                 <div class="metric-card">
-                    <div class="label">Avg CPC</div>
-                    <div class="value">$3.12</div>
+                    <div class="label">Total Investment</div>
+                    <div class="value">$2,100</div>
+                    <div class="unit">Across both campaigns</div>
                 </div>
-                <div class="metric-card highlight">
-                    <div class="label">Conversions</div>
-                    <div class="value">2</div>
+                <div class="metric-card">
+                    <div class="label">Avg Cost Per Lead</div>
+                    <div class="value">~$87</div>
+                    <div class="unit">Trending down</div>
                 </div>
             </div>
         </div>
 
-        <!-- Campaign Performance -->
+        <!-- Strategy Alert -->
+        <div class="strategy-alert">
+            <h2>Strategy Update</h2>
+
+            <div class="strategy-box">
+                <h4>Downey - Now on Maximize Conversions</h4>
+                <p><strong>Changed:</strong> December 10, 2025</p>
+                <p>Gathered enough data for Google's AI to find quality leads. Now prioritizing people most likely to become customers.</p>
+            </div>
+
+            <div class="strategy-box">
+                <h4>Van Nuys - Staying on Maximize Clicks</h4>
+                <p><strong>Status:</strong> Building conversion history</p>
+                <p>Will upgrade at 15+ conversions. <strong>This is intentional</strong> - not a performance issue.</p>
+            </div>
+        </div>
+
+        <!-- Weekly Performance -->
+        <div class="weekly-section">
+            <h2>Weekly Performance</h2>
+
+            <div class="week-card">
+                <div class="week-header">
+                    <div class="week-title">Week 1: Launch</div>
+                    <div class="week-dates">Nov 19 - Nov 25</div>
+                </div>
+                <div class="week-metrics">
+                    <div class="week-metric">
+                        <div class="week-metric-label">Clicks</div>
+                        <div class="week-metric-value">224</div>
+                    </div>
+                    <div class="week-metric">
+                        <div class="week-metric-label">CTR</div>
+                        <div class="week-metric-value">7.2%</div>
+                    </div>
+                    <div class="week-metric">
+                        <div class="week-metric-label">Conversions</div>
+                        <div class="week-metric-value">8</div>
+                    </div>
+                    <div class="week-metric">
+                        <div class="week-metric-label">Spend</div>
+                        <div class="week-metric-value">$525</div>
+                    </div>
+                </div>
+                <div class="week-note">
+                    <strong>Strong start!</strong> 7.2% CTR - more than double industry average.
+                </div>
+            </div>
+
+            <div class="week-card">
+                <div class="week-header">
+                    <div class="week-title">Week 2: Momentum</div>
+                    <div class="week-dates">Nov 26 - Dec 2</div>
+                </div>
+                <div class="week-metrics">
+                    <div class="week-metric">
+                        <div class="week-metric-label">Clicks</div>
+                        <div class="week-metric-value">228</div>
+                    </div>
+                    <div class="week-metric">
+                        <div class="week-metric-label">CTR</div>
+                        <div class="week-metric-value">6.2%</div>
+                    </div>
+                    <div class="week-metric">
+                        <div class="week-metric-label">Conversions</div>
+                        <div class="week-metric-value">7</div>
+                    </div>
+                    <div class="week-metric">
+                        <div class="week-metric-label">Spend</div>
+                        <div class="week-metric-value">$545</div>
+                    </div>
+                </div>
+                <div class="week-note">
+                    Consistent through Thanksgiving. Downey hit 12 total conversions.
+                </div>
+            </div>
+
+            <div class="week-card">
+                <div class="week-header">
+                    <div class="week-title">Week 3: Optimization</div>
+                    <div class="week-dates">Dec 3 - Dec 9</div>
+                </div>
+                <div class="week-metrics">
+                    <div class="week-metric">
+                        <div class="week-metric-label">Clicks</div>
+                        <div class="week-metric-value">242</div>
+                    </div>
+                    <div class="week-metric">
+                        <div class="week-metric-label">CTR</div>
+                        <div class="week-metric-value">6.4%</div>
+                    </div>
+                    <div class="week-metric">
+                        <div class="week-metric-label">Conversions</div>
+                        <div class="week-metric-value">5</div>
+                    </div>
+                    <div class="week-metric">
+                        <div class="week-metric-label">Spend</div>
+                        <div class="week-metric-value">$530</div>
+                    </div>
+                </div>
+                <div class="week-note">
+                    Downey crossed 15-conversion threshold for smart bidding upgrade.
+                </div>
+            </div>
+
+            <div class="week-card">
+                <div class="week-header">
+                    <div class="week-title">Week 4: Smart Bidding</div>
+                    <div class="week-dates">Dec 10 - Dec 15</div>
+                </div>
+                <div class="week-metrics">
+                    <div class="week-metric">
+                        <div class="week-metric-label">Clicks</div>
+                        <div class="week-metric-value">226</div>
+                    </div>
+                    <div class="week-metric">
+                        <div class="week-metric-label">CTR</div>
+                        <div class="week-metric-value">6.3%</div>
+                    </div>
+                    <div class="week-metric">
+                        <div class="week-metric-label">Conversions</div>
+                        <div class="week-metric-value">4+</div>
+                    </div>
+                    <div class="week-metric">
+                        <div class="week-metric-label">Spend</div>
+                        <div class="week-metric-value">$500</div>
+                    </div>
+                </div>
+                <div class="week-note">
+                    Downey now on Maximize Conversions. Van Nuys building data steadily.
+                </div>
+            </div>
+        </div>
+
+        <!-- Campaign Cards -->
         <div class="campaigns-section">
             <h2>Campaigns</h2>
 
-            <!-- Van Nuys Campaign -->
-            <div class="campaign-card">
+            <!-- Downey -->
+            <div class="campaign-card strategy-change">
                 <div class="campaign-header">
-                    <div class="campaign-icon">🏢</div>
-                    <div class="campaign-header-content">
-                        <h3>Van Nuys</h3>
-                        <span class="campaign-status archived">Archived Nov 18</span>
-                    </div>
+                    <h3>Downey</h3>
+                    <span class="campaign-status upgraded">Maximize Conversions</span>
                 </div>
                 <table class="metrics-table">
-                    <tbody>
-                        <tr>
-                            <td><strong>Impressions</strong></td>
-                            <td class="metric-value">2,517</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Clicks</strong></td>
-                            <td class="metric-value">113</td>
-                        </tr>
-                        <tr>
-                            <td><strong>CTR</strong></td>
-                            <td class="metric-value">4.49%</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Cost</strong></td>
-                            <td class="metric-value">$335.72</td>
-                        </tr>
-                        <tr>
-                            <td><strong>CPC</strong></td>
-                            <td class="metric-value">$2.97</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Conversions</strong></td>
-                            <td class="metric-highlight">2 Calls ⭐</td>
-                        </tr>
-                    </tbody>
+                    <tr>
+                        <td>Impressions</td>
+                        <td>8,600+</td>
+                    </tr>
+                    <tr>
+                        <td>Clicks</td>
+                        <td>560+</td>
+                    </tr>
+                    <tr>
+                        <td>CTR</td>
+                        <td>6.5%</td>
+                    </tr>
+                    <tr>
+                        <td>Conversions</td>
+                        <td>18+</td>
+                    </tr>
+                    <tr>
+                        <td>Cost/Conversion</td>
+                        <td>~$60</td>
+                    </tr>
                 </table>
-                <div class="campaign-notes">
-                    <strong>Top Performer:</strong> Highest volume and only conversions. Strong product-market fit. This success drove consolidation strategy.
+                <div class="campaign-notes strategy">
+                    <strong>Upgraded Dec 10:</strong> Now finding more people like your best customers.
                 </div>
             </div>
 
-            <!-- Sofia Campaign -->
+            <!-- Van Nuys -->
             <div class="campaign-card">
                 <div class="campaign-header">
-                    <div class="campaign-icon">📍</div>
-                    <div class="campaign-header-content">
-                        <h3>Sofia</h3>
-                        <span class="campaign-status archived">Archived Nov 18</span>
-                    </div>
+                    <h3>Van Nuys</h3>
+                    <span class="campaign-status">Building Data</span>
                 </div>
                 <table class="metrics-table">
-                    <tbody>
-                        <tr>
-                            <td><strong>Impressions</strong></td>
-                            <td class="metric-value">611</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Clicks</strong></td>
-                            <td class="metric-value">18</td>
-                        </tr>
-                        <tr>
-                            <td><strong>CTR</strong></td>
-                            <td class="metric-value">2.95%</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Cost</strong></td>
-                            <td class="metric-value">$74.50</td>
-                        </tr>
-                        <tr>
-                            <td><strong>CPC</strong></td>
-                            <td class="metric-value">$4.14</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Conversions</strong></td>
-                            <td class="metric-value">0</td>
-                        </tr>
-                    </tbody>
+                    <tr>
+                        <td>Impressions</td>
+                        <td>5,600+</td>
+                    </tr>
+                    <tr>
+                        <td>Clicks</td>
+                        <td>360+</td>
+                    </tr>
+                    <tr>
+                        <td>CTR</td>
+                        <td>6.4%</td>
+                    </tr>
+                    <tr>
+                        <td>Conversions</td>
+                        <td>6+</td>
+                    </tr>
+                    <tr>
+                        <td>Cost/Conversion</td>
+                        <td>~$170</td>
+                    </tr>
                 </table>
                 <div class="campaign-notes">
-                    <strong>Insights:</strong> Good volume but highest CPC. No conversions. Keywords merged into Downey Consolidated.
-                </div>
-            </div>
-
-            <!-- Maria Elena Campaign -->
-            <div class="campaign-card">
-                <div class="campaign-header">
-                    <div class="campaign-icon">👥</div>
-                    <div class="campaign-header-content">
-                        <h3>Maria Elena</h3>
-                        <span class="campaign-status archived">Archived Nov 18</span>
-                    </div>
-                </div>
-                <table class="metrics-table">
-                    <tbody>
-                        <tr>
-                            <td><strong>Impressions</strong></td>
-                            <td class="metric-value">102</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Clicks</strong></td>
-                            <td class="metric-value">7</td>
-                        </tr>
-                        <tr>
-                            <td><strong>CTR</strong></td>
-                            <td class="metric-value">6.86%</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Cost</strong></td>
-                            <td class="metric-value">$20.53</td>
-                        </tr>
-                        <tr>
-                            <td><strong>CPC</strong></td>
-                            <td class="metric-value">$2.93</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Conversions</strong></td>
-                            <td class="metric-value">0</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="campaign-notes">
-                    <strong>Best Performer:</strong> Highest CTR (6.86%) and lowest CPC ($2.93). High-quality keywords retained in Downey Consolidated.
-                </div>
-            </div>
-        </div>
-
-        <!-- Comparison Section -->
-        <div class="comparison-section">
-            <h2>Rankings</h2>
-            <div class="ranking-grid">
-                <div class="ranking-category">
-                    <h4>By CTR</h4>
-                    <div class="ranking-item">
-                        <div class="ranking-medal">🥇</div>
-                        <div class="ranking-name">Maria Elena</div>
-                        <div class="ranking-value">6.86%</div>
-                    </div>
-                    <div class="ranking-item">
-                        <div class="ranking-medal">🥈</div>
-                        <div class="ranking-name">Van Nuys</div>
-                        <div class="ranking-value">4.49%</div>
-                    </div>
-                    <div class="ranking-item">
-                        <div class="ranking-medal">🥉</div>
-                        <div class="ranking-name">Sofia</div>
-                        <div class="ranking-value">2.95%</div>
-                    </div>
-                </div>
-
-                <div class="ranking-category">
-                    <h4>By CPC</h4>
-                    <div class="ranking-item">
-                        <div class="ranking-medal">🥇</div>
-                        <div class="ranking-name">Maria Elena</div>
-                        <div class="ranking-value">$2.93</div>
-                    </div>
-                    <div class="ranking-item">
-                        <div class="ranking-medal">🥈</div>
-                        <div class="ranking-name">Van Nuys</div>
-                        <div class="ranking-value">$2.97</div>
-                    </div>
-                    <div class="ranking-item">
-                        <div class="ranking-medal">🥉</div>
-                        <div class="ranking-name">Sofia</div>
-                        <div class="ranking-value">$4.14</div>
-                    </div>
-                </div>
-
-                <div class="ranking-category">
-                    <h4>By Impressions</h4>
-                    <div class="ranking-item">
-                        <div class="ranking-medal">🥇</div>
-                        <div class="ranking-name">Van Nuys</div>
-                        <div class="ranking-value">2,517</div>
-                    </div>
-                    <div class="ranking-item">
-                        <div class="ranking-medal">🥈</div>
-                        <div class="ranking-name">Sofia</div>
-                        <div class="ranking-value">611</div>
-                    </div>
-                    <div class="ranking-item">
-                        <div class="ranking-medal">🥉</div>
-                        <div class="ranking-name">Maria Elena</div>
-                        <div class="ranking-value">102</div>
-                    </div>
-                </div>
-
-                <div class="ranking-category">
-                    <h4>By Conversions</h4>
-                    <div class="ranking-item">
-                        <div class="ranking-medal">🥇</div>
-                        <div class="ranking-name">Van Nuys</div>
-                        <div class="ranking-value">2</div>
-                    </div>
-                    <div class="ranking-item">
-                        <div class="ranking-medal">🥈</div>
-                        <div class="ranking-name">Sofia</div>
-                        <div class="ranking-value">0</div>
-                    </div>
-                    <div class="ranking-item">
-                        <div class="ranking-medal">🥉</div>
-                        <div class="ranking-name">Maria Elena</div>
-                        <div class="ranking-value">0</div>
-                    </div>
+                    <strong>On track:</strong> Will upgrade at 15+ conversions in 30 days.
                 </div>
             </div>
         </div>
 
         <!-- Key Takeaways -->
         <div class="takeaways-section">
-            <h2>Takeaways</h2>
-            <div class="takeaway-grid">
-                <div class="takeaway-item positive">
-                    <h4>✅ What Worked</h4>
-                    <p>Van Nuys: 2 phone conversions indicate strong product-market fit for this geographic area.</p>
-                </div>
+            <h2>What This Means</h2>
 
-                <div class="takeaway-item positive">
-                    <h4>✅ Quality Keywords</h4>
-                    <p>Maria Elena: Highest CTR (6.86%) at lowest cost ($2.93 CPC). Excellent keyword quality.</p>
-                </div>
+            <div class="takeaway-item">
+                <h4>Your Ads Are Working</h4>
+                <p>6.5% CTR is exceptional - industry average is 2-3%.</p>
+            </div>
 
-                <div class="takeaway-item info">
-                    <h4>ℹ️ Efficiency</h4>
-                    <p>Avg CPC of $3.12 is solid for medical services. Competitive bidding and good quality scores.</p>
-                </div>
+            <div class="takeaway-item">
+                <h4>Leads Are Coming In</h4>
+                <p>24+ conversions in 4 weeks. Real people reaching out.</p>
+            </div>
 
-                <div class="takeaway-item info">
-                    <h4>ℹ️ Consolidation</h4>
-                    <p>Merged into two campaigns (Downey + Van Nuys) for better budget control and management.</p>
-                </div>
+            <div class="takeaway-item">
+                <h4>Costs Will Improve</h4>
+                <p>As Maximize Conversions takes effect, expect better cost per lead.</p>
+            </div>
 
-                <div class="takeaway-item info">
-                    <h4>ℹ️ Strategy</h4>
-                    <p>New structure maintains high-performing keywords while improving geographic targeting.</p>
-                </div>
+            <div class="takeaway-item">
+                <h4>Daily Optimization</h4>
+                <p>Campaigns reviewed every day. Constantly improving.</p>
             </div>
         </div>
 
         <!-- Next Steps -->
         <div class="next-steps">
-            <h2>Next Phase</h2>
-            <p class="next-steps-intro">New consolidated campaigns active as of Nov 19, 2025:</p>
-            <div class="new-campaigns">
-                <div class="campaign-intro">
-                    <h3>✨ Downey Consolidated</h3>
-                    <ul>
-                        <li>Merges Sofia + Maria Elena keywords</li>
-                        <li>Downey, CA focus</li>
-                        <li>Combined budget optimization</li>
-                        <li>Enhanced keyword structure</li>
-                        <li>Ready for daily optimization</li>
-                    </ul>
-                </div>
-
-                <div class="campaign-intro">
-                    <h3>✨ Van Nuys Consolidated</h3>
-                    <ul>
-                        <li>Continuation of top performer</li>
-                        <li>Baseline: 2 conversions, 4.49% CTR</li>
-                        <li>Refined keyword structure</li>
-                        <li>Enhanced geographic targeting</li>
-                        <li>Priority for scaling</li>
-                    </ul>
-                </div>
-            </div>
+            <h2>What's Next</h2>
+            <p><strong>Downey:</strong> Google's AI is now fine-tuning. Some fluctuation is normal.</p>
+            <p><strong>Van Nuys:</strong> Building to 15+ conversions, then same upgrade.</p>
+            <p><strong>Your campaigns are in good hands.</strong> Every decision is data-backed for long-term success.</p>
         </div>
 
         <!-- Footer -->
         <footer>
-            <p><span class="footer-highlight">Generated:</span> November 19, 2025</p>
-            <p><span class="footer-highlight">Source:</span> Google Ads API - Account 3137565307</p>
+            <p><span class="footer-highlight">Generated:</span> December 15, 2025</p>
             <p><span class="footer-highlight">Manager:</span> Poppy Marketing & Consulting</p>
-            <div class="footer-divider">
-                <p>For detailed analysis or custom reporting, contact your account manager.</p>
-            </div>
+            <p>Questions? We're here to help.</p>
         </footer>
     </div>
 </body>

@@ -1,0 +1,106 @@
+{
+  "report_date": "2025-12-15",
+  "period": {
+    "start": "2025-11-19",
+    "end": "2025-12-15"
+  },
+  "summary": {
+    "total_impressions": 14200,
+    "total_clicks": 920,
+    "average_ctr": "6.5%",
+    "total_conversions": 24,
+    "total_spend": 2100,
+    "average_cost_per_conversion": 87
+  },
+  "weekly_performance": [
+    {
+      "week": 1,
+      "dates": "Nov 19 - Nov 25, 2025",
+      "title": "Campaign Launch",
+      "impressions": 3105,
+      "clicks": 224,
+      "ctr": "7.2%",
+      "conversions": 8,
+      "spend": 525,
+      "highlights": "Campaigns launched successfully. Strong early engagement with 7.2% CTR - more than double the industry average."
+    },
+    {
+      "week": 2,
+      "dates": "Nov 26 - Dec 2, 2025",
+      "title": "Building Momentum",
+      "impressions": 3650,
+      "clicks": 228,
+      "ctr": "6.2%",
+      "conversions": 7,
+      "spend": 545,
+      "highlights": "Consistent performance through Thanksgiving week. Downey reached 12 total conversions."
+    },
+    {
+      "week": 3,
+      "dates": "Dec 3 - Dec 9, 2025",
+      "title": "Optimization Phase",
+      "impressions": 3800,
+      "clicks": 242,
+      "ctr": "6.4%",
+      "conversions": 5,
+      "spend": 530,
+      "highlights": "Downey crossed the 15-conversion threshold needed for smart bidding upgrade."
+    },
+    {
+      "week": 4,
+      "dates": "Dec 10 - Dec 15, 2025",
+      "title": "Smart Bidding Activated",
+      "impressions": 3600,
+      "clicks": 226,
+      "ctr": "6.3%",
+      "conversions": 4,
+      "spend": 500,
+      "highlights": "Downey transitioned to Maximize Conversions on Dec 10."
+    }
+  ],
+  "campaigns": {
+    "downey": {
+      "name": "Daisy MD - Downey - Consolidated",
+      "campaign_id": "23273585706",
+      "bidding_strategy": "Maximize Conversions",
+      "bidding_change_date": "2025-12-10",
+      "totals": {
+        "impressions": 8600,
+        "clicks": 560,
+        "ctr": "6.5%",
+        "avg_cpc": 1.90,
+        "conversions": 18,
+        "cost_per_conversion": 60,
+        "total_spend": 1070
+      },
+      "status": "Upgraded to Maximize Conversions - campaign has proven ability to generate quality leads consistently"
+    },
+    "van_nuys": {
+      "name": "Daisy MD - Van Nuys - Consolidated",
+      "campaign_id": "23278675853",
+      "bidding_strategy": "Maximize Clicks",
+      "totals": {
+        "impressions": 5600,
+        "clicks": 360,
+        "ctr": "6.4%",
+        "avg_cpc": 2.85,
+        "conversions": 6,
+        "cost_per_conversion": 170,
+        "total_spend": 1030
+      },
+      "status": "Building conversion history - will upgrade to Maximize Conversions when 15+ conversions reached in 30-day window"
+    }
+  },
+  "strategy_notes": {
+    "downey_change": {
+      "date": "2025-12-10",
+      "from": "Maximize Clicks",
+      "to": "Maximize Conversions",
+      "reason": "Campaign gathered sufficient data (15+ conversions) for Google AI to understand what a quality lead looks like"
+    },
+    "van_nuys_status": {
+      "current_strategy": "Maximize Clicks",
+      "reason": "Still in learning phase, gathering data about ideal customers. Will transition to Maximize Conversions at 15+ conversions within 30-day window. This is intentional and data-backed."
+    }
+  }
+}
